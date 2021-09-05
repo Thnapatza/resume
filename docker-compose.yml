@@ -4,7 +4,9 @@ services:
   frontend:
     image: vue/resume
     container_name: resume
-    build: .
+    build:
+      context: ./
+      dockerfile: 'Dockerfile'
     ports:
     - '4000:8080'
     volumes:
