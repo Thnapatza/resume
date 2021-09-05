@@ -4,9 +4,7 @@ services:
   frontend:
     image: vue/resume
     container_name: resume
-    build:
-      context: .
-      target: 'develop-stage'
+    build: .
     ports:
     - '4000:8080'
     volumes:
