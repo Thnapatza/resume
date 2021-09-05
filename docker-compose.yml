@@ -1,0 +1,14 @@
+# for local development
+version: '3.7'
+services:
+  frontend:
+    image: vue/resume
+    container_name: resume
+    build:
+      context: .
+      target: 'develop-stage'
+    ports:
+    - '4000:8080'
+    volumes:
+    - '.:/app'
+    command: /bin/sh -c "yarn serve"
