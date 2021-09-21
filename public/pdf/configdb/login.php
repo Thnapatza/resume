@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect('localhost','root','','reg17');
+$db = mysqli_connect('','admin','root1234','fulluser');
 
 	$serialnumber = $_POST['serialnumber'];
 	$password 	  = $_POST['password'];

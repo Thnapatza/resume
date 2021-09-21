@@ -1,9 +1,9 @@
 <?php 
 
-	$hostname = 'localhost';
-	$username = 'root';
-	$pass = '';
-	$dbname = 'reg17';
+	$hostname = '';
+	$username = 'admin';
+	$pass = 'root1234';
+	$dbname = 'fulluser';
 
 	$link = new mysqli($hostname,$username,$pass,$dbname);
 
